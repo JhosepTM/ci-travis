@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - 20
+
+script:
+  - npm install
+  - npm test -- --detectOpenHandles
+  - npm run build # Opcional, si implementas una compilación
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GH_TOKEN
+  on:
+    push: branches: [main]
