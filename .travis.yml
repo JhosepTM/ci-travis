@@ -14,4 +14,4 @@ deploy:
   keep_history: true
   github_token: $GH_TOKEN
   on:
-    push: branches: [main]
+    branch: gh-pages
