@@ -8,7 +8,7 @@ function Contador() {
 
   return (
     <div className='contador-div'>
-      <h1>Contador : {contador}</h1>
+      <h1>Contador: {contador}</h1>
       <button onClick={incrementar}>Incrementar</button>
       <button onClick={decrementar}>Decrementar</button>
     </div>
