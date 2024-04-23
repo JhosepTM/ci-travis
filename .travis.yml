@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 17
+  - "stable"
 
 script:
   - npm install
@@ -15,4 +15,4 @@ deploy:
   github_token: $GH_TOKEN
   local_dir: build
   on:
-    branch: main
+    branch: gh-pages
